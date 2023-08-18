@@ -1,0 +1,68 @@
+.containor {
+    background-color: rgb(52, 50, 50);
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 700px;
+    height: 450px;
+    border-radius: 20px;
+    border: solid;
+    border-color: green;
+}
+
+.in {
+    padding-top: 60px;
+    padding-left: 30%;
+}
+
+input {
+    background-color: rgb(232, 227, 227);
+    text-align: center;
+    border-radius: 15px;
+    width: 250px;
+    height: 30px;
+    border-color: green;
+}
+
+.in2 {
+
+    padding-top: 50px;
+    padding-left: 30%;
+}
+
+#sub {
+    border-color: green;
+    height: 40px;
+    font-weight: bold;
+}
+
+#forget {
+    padding-left: 40%;
+    padding-top: 15px;
+}
+
+a {
+
+    color: white;
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url(assets/font/GvtimeRegular-AL6Jg.otf);
+}
+
+#nameApp::first-letter {
+    color: green;
+    font-family: logo;
+}
+
+
+.logo {
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding-left: 40%;
+    font-family: logo;
+    letter-spacing: .2em;
+    width: fit-content;
+    height: fit-content;
+}

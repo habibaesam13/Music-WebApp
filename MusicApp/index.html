@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneHub</title>
+</head>
+
+<body>
+    <!-- start of side bar -->
+    <div class="sidebar">
+        <div class="logo" id="green-first-letter">TuneHub</div>
+        <div style="padding-top: 15px;">
+            <div class="links"><a href="#" style="padding: 5px;" title="home" onclick="toggleTab(this)"><img
+                        src="assets/icons/home.png" style="width:20px;height: 20px; padding-top: 5px;"></a></div>
+            <div class="links"><a href="#" title="search" onclick="toggleTab(this)"><img
+                        src="assets/icons/magnifying-glass.png" style="width:20px;height: 20px;color: black;"></a></div>
+            <div class="links"><a href="#" title="favorites" onclick="toggleTab(this)"><i class="material-icons"
+                        style="color: black;">favorite</i></a></div>
+            <div class="links"><a href="#" title="settings" onclick="toggleTab(this)"><img
+                        src="assets/icons/settings.png" style="width:20px;height: 20px;color: black;"></a></div>
+            <div class="links"><a href="#" title="Add" onclick="toggleTab(this)"><img src="assets/icons/add.png"
+                        style="width:20px;height: 20px;color: black;"
+                        onclick="alert('sorry this option only for registerd members');"></a></div>
+            <!-- <div style="padding-top: 150px;"><a href="#" title="logout" onclick="toggleTab(this)"><img
+                        src="assets/icons/logout.png" style="width:20px;height: 20px;color: black;"></a> </div> -->
+        </div>
+    </div>
+    <!-- end of side bar -->
+
+
+    <!--subscribe -->
+
+    <div class="sub">
+        <div id="login-tab">
+            <a style="text-decoration: none; color: white;  " href="login.php">
+                <p style="padding-top: 5px; padding-left: 20px;">Login</p>
+            </a>
+        </div>
+        <div id="signup-tab">
+            <a style="text-decoration: none; color: rgb(255, 255, 255);" href="signUp.php">
+                <p style="margin-top: -15px;margin-left: 15px;padding-top: 5px; ">SignUp</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div>
+        <!-- playlists -->
+        <div class="playLists">
+            <p class="nameApp" style="color: white;">TuneHub
+            <p style="color: white; margin-left:70px; margin-top: -50px;font-weight: bold;">PlayLists</p>
+        </div>
+        <div style="  margin-left: 84%; margin-top: -40px;">
+            <a href="#" style="text-decoration: none;color: white;">Show all</a>
+        </div>
+
+        <!-- albums -->
+
+        <div class="albums-photo">
+            <!-- first photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                  margin-left: 15%;border-radius: 15px; ">
+                <div class="photo">
+                    <a href="#"><img src="assets/albums/Travis-Scott.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">Today's
+                        top hits</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">Travis Scott is on to of the<br>Hottest
+                        50!</p>
+                </div>
+            </div>
+
+            <!-- second photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                              margin-left: 30%;border-radius: 15px; margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/nickiMinaj.jpg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">RapCaviar
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">Music from Travis Scott <br>Darke and
+                        Latto.</p>
+                </div>
+            </div>
+
+            <!-- third photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                    margin-left: 45%;border-radius: 15px;margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/allOut.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">All Out
+                        2010s</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">The biggest songs of the<br>2010s.</p>
+                </div>
+            </div>
+
+            <!-- 4th photo -->
+
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                     margin-left: 60%;border-radius: 15px;margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/rock.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">Rock
+                        Classics</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">Rock legends & epic songs<br>that continue
+                        to inspire...</p>
+                </div>
+            </div>
+
+            <!-- 5th photo -->
+
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                    margin-left: 75%;border-radius: 15px;margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/chill.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">Chill Hits
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">Kick back to the best new<br>and recent
+                        chill hits.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fouces -->
+
+    <div>
+        <!-- playlists -->
+        <div class="trending">
+
+            <p style="color: white; margin-left:70px; margin-top: -50px; font-weight: bold;">Trending</p>
+        </div>
+        <div style="  margin-left: 84%; margin-top: -40px;">
+            <a href="#" style="text-decoration: none;color: white;">Show all</a>
+        </div>
+
+        <!-- albums -->
+
+        <div class="albums-photo">
+            <!-- first photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                          margin-left: 15%;border-radius: 15px;">
+                <div class=" photo">
+                    <a href="#"><img src="assets/albums/Batal-3alam.jpg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">7adota
+                        Almany </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 20px;">Marwan Mousa<br>Batal 3alam.</p>
+                </div>
+            </div>
+
+            <!-- second photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                                      margin-left: 30%;border-radius: 15px; margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="song.html"> <img src="assets/albums/ElBakht.jpg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 23px;">Al Bakht
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 23px;">Wigz<br>Al Bakht.</p>
+                </div>
+            </div>
+
+            <!-- third photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                            margin-left: 45%;border-radius: 15px;margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="nextSong.html"> <img src="assets/albums/ElHalal.jpg"
+                            style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">Al Halal
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">Marwan Pablo<br>Al Halal.</p>
+                </div>
+            </div>
+
+            <!-- 4th photo -->
+
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                             margin-left: 60%;border-radius: 15px;margin-top: -18.25%;">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/Brazil.jpg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 23px;">Brazil</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 20px;">Afroto<br>San Stephano.</p>
+                </div>
+            </div>
+
+            <!-- 5th photo -->
+
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                            margin-left: 75%;border-radius: 15px;margin-top: -18.25%; ">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/Ras-Shitan.jpg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">Maged
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">Abyusif<br>Ras Shitan.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!---start of footer-->
+    <div class="footer">
+        <div style="padding-left:30%;">
+            <p style="padding-left: 3.5%; padding-top: 2%;">Company</p>
+            <ul style="list-style-type: none; ">
+                <div class="res" style="margin-top: -20px;">
+                    <li><a href="#" class="lin">About</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">Jobs</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">For the Record</a></li>
+                </div>
+            </ul>
+        </div>
+
+
+        <div style="padding-left:45%; margin-top:  -134px;">
+            <p style="padding-left: 3.5%; padding-top: 2%;">Communities</p>
+            <ul style="list-style-type: none; ">
+                <div class="res" style="margin-top: -20px;">
+                    <li><a href="#" class="lin">For Artists</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">Developers</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">Advertising</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">Investors</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">Vendors</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div style="padding-left:60%; margin-top:  -182px;">
+            <p style="padding-left: 6%; padding-top: 2%;">Useful links</p>
+            <ul style="list-style-type: none; ">
+                <div class="res" style="margin-top: -20px;">
+                    <li><a href="#" class="lin">Support</a></li>
+                </div>
+                <div class="res">
+                    <li><a href="#" class="lin">Free Mobile App</a></li>
+                </div>
+            </ul>
+        </div>
+        <!-- social icons -->
+        <div style="display: block; padding-top: -500px;padding-left:80%;margin-top: -5%;">
+            <div>
+                <a href="#"><img src="assets/icons/facebook_2168281.png" style="width: 25px; height: 25px;"></a>
+            </div>
+            <div style="margin-left: 40px; margin-top: -30px;">
+                <a href="#"><img src="assets/icons/instagram_1384015.png" style="width: 25px; height: 25px;"></a>
+            </div>
+            <div style="margin-left: 80px; margin-top: -28px;">
+                <a href="#"><img src="assets/icons/twitter_4494465.png" style="width: 25px; height: 25px;"></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of footer -->
+
+    <!-- this script is for the tab to move to clicked item -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

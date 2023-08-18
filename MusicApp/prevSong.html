@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleSong.css">
+    <title>TuneHub-Song</title>
+</head>
+
+<body>
+
+    <!-- start of side bar -->
+    <div class="sidebar" style="margin-top:100px; margin-left: 15px;">
+        <div class="logo" id="green-first-letter">TuneHub</div>
+        <div style="padding-top: 15px;">
+            <div class="links"><a href="index2.html" style="padding: 5px;" title="home" onclick="toggleTab(this)"><img
+                        src="assets/icons/home.png" style="width:20px;height: 20px; padding-top: 5px;"></a></div>
+            <div class="links"><a href="#" title="search" onclick="toggleTab(this)"><img
+                        src="assets/icons/magnifying-glass.png" style="width:20px;height: 20px;color: black;"></a></div>
+            <div class="links"><a href="#" title="favorites" onclick="toggleTab(this)"><i class="material-icons"
+                        style="color: black;">favorite</i></a></div>
+            <div class="links"><a href="#" title="settings" onclick="toggleTab(this)"><img
+                        src="assets/icons/settings.png" style="width:20px;height: 20px;color: black;"></a></div>
+            <div class="links"><a href="#" title="Add" onclick="toggleTab(this)"><img src="assets/icons/add.png"
+                        style="width:20px;height: 20px;color: black;"></a></div>
+            <!-- <div style="padding-top: 150px;"><a href="#" title="logout" onclick="toggleTab(this)"><img
+                        src="assets/icons/logout.png" style="width:20px;height: 20px;color: black;"></a> </div> -->
+        </div>
+    </div>
+    <!-- end of side bar -->
+
+
+    <!-- for song with  controllers -->
+
+    <div class="song" style="border: 2px solid rgb(145, 227, 145);">
+        <img src="assets/albums/tany.jpeg" style="width: 250px;padding-left: 150px;padding-top: 50px;">
+        <div style="margin-left: 40%;font-weight: bold;">
+            <p style="color: white;">Tany - Lege-Cy</p>
+        </div>
+        <audio id="audioPlayer" src="assets/songs/tany.mp3" controls hidden></audio>
+        <div class="controls">
+            <div class="up">
+                <a href="#"> <img src="assets/icons/previous-track.png" class="contsong"
+                        style="padding-right: 20px;"></a>
+                <img src="assets/icons/play-button.png" class="contsong" id="playButton">
+                <img src="assets/icons/pause.png" class="contsong" id="pauseButton" style="display: none;">
+                <a href="song.html"> <img src="assets/icons/back.png" class="contsong" style="padding-left: 20px;"></a>
+            </div>
+            <div style="margin-top: 15px;margin-left: 5px;"> <input type="range" id="seekSlider" min="0" step="1"
+                    value="0">
+                <div id="timer" style="color: rgb(255, 255, 255);"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start of same songs -->
+
+    <div class="trending">
+
+        <p style="color: white; margin-left:70px; margin-top: -50px; font-weight: bold;">Best of artists</p>
+    </div>
+    <div style="  margin-left: 84%; margin-top: -40px;">
+        <a href="#" style="text-decoration: none;color: white;">Show all</a>
+    </div>
+    <div class="albums-photo">
+        <div style="margin-top: 15px;">
+            <!-- first photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                  margin-left: 15%;border-radius: 15px; " class="photooo">
+                <div class="photo">
+                    <a href="#"><img src="assets/albums/tany.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">This Is
+                        Lege-Cy</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">This is Lege-Cy.The<br>essential
+                        tracks,all i...
+                    </p>
+                </div>
+            </div>
+
+            <!-- second photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                              margin-left: 30%;border-radius: 15px; margin-top: -18.25%; " class="photooo">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/matlob.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">This Is
+                        Afroto
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">This is Afroto. <br>The essential
+                        tracks...</p>
+                </div>
+            </div>
+
+            <!-- third photo -->
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                    margin-left: 45%;border-radius: 15px;margin-top: -18.25%; " class="photooo">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/asala.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">This Is
+                        Asala</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">This is Asala Naser.<br>The essential
+                        tracks...</p>
+                </div>
+            </div>
+
+            <!-- 4th photo -->
+
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                     margin-left: 60%;border-radius: 15px;margin-top: -18.25%; " class="photooo">
+                <div class="photo">
+                    <a href="#"> <img src="assets/albums/ma8ror.jpeg" style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">This Is
+                        Amr Diab</p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">This is Amr Diab.The<br>essential
+                        tracks...</p>
+                </div>
+            </div>
+
+            <!-- 5th photo -->
+
+            <div style="width: 200px;height: 280px; background-color: rgb(52, 50, 50);
+                    margin-left: 75%;border-radius: 15px;margin-top: -18.25%; " class="photooo">
+                <div class="photo">
+                    <a href="nextSong.html"> <img src="assets/albums/ElHalal.jpg"
+                            style="width: 150px; height: 150px;"></a>
+                </div>
+                <div>
+                    <p style="text-transform: capitalize;color: white; font-weight: bold;padding-left: 20px;">This Is
+                        Marwan Pablo
+                    </p>
+                    <p style="color: rgb(152, 152, 152); padding-left: 15px;">This is Marwan Pablo.<br>and recent
+                        essential tracks... </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="scriptSong.js"></script>
+</body>
+
+</html>
